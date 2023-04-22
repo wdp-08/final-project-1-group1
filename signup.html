@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            padding: 20px;
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px grey;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Sign Up Page</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password"><br><br>
+        <input type="submit" value="Sign Up">
+        <p id="status"></p>
+    </form>
+
+    <script>
+        var form = document.querySelector('form');
+        var usernameInput = document.getElementById('username');
+        var emailInput = document.getElementById('email');
+        var passwordInput = document.getElementById('password');
+        var confirmPasswordInput = document.getElementById('confirm-password');
+        var status = document.getElementById('status');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // mencegah form untuk mengirimkan data dan melakukan refresh halaman
+            var username = usernameInput.value;
+            var email = emailInput.value;
+            var password = passwordInput.value;
+            var confirmPassword = confirmPasswordInput.value;
+
+            // Validasi form
+            if (username.trim() === '') {
+                status.textContent = 'Please enter a username';
+                return;
+            }
+
+            if (email.trim() === '') {
+                status.textContent = 'Please enter an email';
+                return;
+            }
+
+            if (password.trim() === '') {
+                status.textContent = 'Please enter a password';
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                status.textContent = 'Passwords do not match';
+                return;
+            }
+
+            // Simpan data ke localStorage
+            localStorage.setItem('username', username);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+
+            // Arahkan ke halaman login setelah sign up berhasil
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+
+</html>
