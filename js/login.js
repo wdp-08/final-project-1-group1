@@ -1,4 +1,3 @@
-
 var form = document.querySelector('form');
 var usernameInput = document.getElementById('username');
 var passwordInput = document.getElementById('password');
