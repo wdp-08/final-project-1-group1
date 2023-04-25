@@ -3,78 +3,48 @@
 
 <head>
     <title>Login Page</title>
-    <style>
-        body {
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
 
-        form {
-            padding: 20px;
-            width: 400px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px grey;
-        }
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-        input[type="text"],
-        input[type="password"] {
-            padding: 10px;
-            margin-top: 10px;
-            width: 100%;
-            border-radius: 5px;
-            border: none;
-        }
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
 
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            width: 100%;
-        }
-    </style>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <form>
-        <h1>Login Page</h1>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Login">
-        <p id="status"></p>
-    </form>
-
-    <script>
-        var form = document.querySelector('form');
-        var usernameInput = document.getElementById('username');
-        var passwordInput = document.getElementById('password');
-        var status = document.getElementById('status');
-
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // mencegah form untuk mengirimkan data dan melakukan refresh halaman
-            var username = usernameInput.value;
-            var password = passwordInput.value;
-            var storedUsername = localStorage.getItem('username');
-            var storedPassword = localStorage.getItem('password');
-
-            if (username === storedUsername && password === storedPassword) {
-                window.location.href = 'index.html'; // mengarahkan ke halaman home jika login berhasil
-            } else {
-                status.textContent = 'Invalid username or password';
-            }
-        });
-    </script>
+<body style="background-color: white;">
+    <div class=" container-fluid py-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <img src="gambar/login.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <h1 style="text-align: center;">Login</h1>
+                        <br>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username"><br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password"><br><br>
+                        <input type="submit" value="Login">
+                        <p id="status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact End-->
 </body>
+<script src="js/login.js"></script>
 
 </html>
