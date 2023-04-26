@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,93 +8,68 @@
     <title>Cart</title>
     <link rel="stylesheet" href="css/cart.css">
 </head>
+
 <body>
     <div class="container">
 
         <form action="">
-    
+
             <div class="row">
-    
+
                 <div class="col">
-    
+
                     <h3 class="title">billing address</h3>
-    
+
                     <div class="inputBox">
                         <span>nama lengkap :</span>
-                        <input type="text" placeholder="Jerome Pollin">
+                        <input type="text" id="name" placeholder="Jerome Pollin">
                     </div>
                     <div class="inputBox">
                         <span>email :</span>
-                        <input type="email" placeholder="example@example.com">
+                        <input type="email" id="email" placeholder="example@example.com">
                     </div>
                     <div class="inputBox">
                         <span>alamat jemput:</span>
-                        <input type="text" placeholder="Jln - Gang - No.Rumah">
+                        <input type="text" id="alamatJemput" placeholder="Jln - Gang - No.Rumah">
                     </div>
                     <div class="inputBox">
                         <span>alamat antar :</span>
-                        <input type="text" placeholder="Jln- Gang - No.Rumah">
+                        <input type="text" id="alamatAntar" placeholder="Jln- Gang - No.Rumah">
                     </div>
-    
-                    <div class="flex">
-                        <div class="inputBox">
-                            <span>kota :</span>
-                            <input type="text" placeholder="Jakarta">
-                        </div>
-                        <div class="inputBox">
-                            <span>kode pos :</span>
-                            <input type="text" placeholder="51625">
-                        </div>
-                    </div>
-    
                 </div>
-    
-                <div class="col">
-    
-                    <h3 class="title">payment</h3>
-    
-                    <div class="inputBox">
-                        <span>pembayaran tersedia :</span>
-                        <img src="gambar/card.png" alt="">
-                    </div>
-                    <div class="inputBox">
-                        <span>nama rekening :</span>
-                        <input type="text" placeholder="Mr. Jerome Pollin">
-                    </div>
-                    <div class="inputBox">
-                        <span>no. rekening :</span>
-                        <input type="number" placeholder="1111-2222-3333-4444">
-                    </div>
+                <div class="col" style="margin-top: 37px; margin-left: 20px;">
                     <div class="inputBox">
                         <span>no. hp :</span>
-                        <input type="text" placeholder="081234567890">
+                        <input type="text" id="noHp" placeholder="081234567890">
                     </div>
-    
+
+
                     <div class="flex">
                         <div class="inputBox">
                             <span>layanan :</span>
                             <select id="text" type="text">
-                                <option value="volvo">Cuci Lengkap</option>
-                                <option value="saab"> Cuci Setrika</option>
-                                <option value="fiat">Cuci Kilat</option>
-                              </select>
+                                <option value="CL">Cuci Lengkap</option>
+                                <option value="CS"> Cuci Setrika</option>
+                                <option value="CK">Cuci Kilat</option>
+                            </select>
                         </div>
                         <div class="inputBox">
                             <span>Quantity :</span>
-                            <input type="number" placeholder="1">
+                            <input type="number" id="quantity" placeholder="1">
                         </div>
                     </div>
-    
+
                 </div>
-        
+
             </div>
-    
-            <input type="submit" value="proceed to checkout" class="submit-btn">
-    
+
+            <input type="submit" id="submit" value="proceed to checkout" class="submit-btn">
+
         </form>
-    
-    </div>    
-        
+
+    </div>
+
     <script src="js/cart.js"></script>
 </body>
+
 </html>
