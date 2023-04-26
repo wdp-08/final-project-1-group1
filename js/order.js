@@ -3,20 +3,23 @@ const data = JSON.parse(localStorage.getItem('dataOrders')) || [];
 
 // Membuat fungsi untuk merender elemen
 const renderData = () => {
-    const rootElement = document.getElementById('root');
+    const rootElement = document.getElementById('table');
     if (rootElement) {
         rootElement.innerHTML = ''; // Menghapus isi dari elemen <main> sebelum merender kembali
         data.forEach((item) => {
             const { name, email, alamatJemputInput, alamatAntarInput, noHp, layananInput, quantityInput } = item;
             const itemElement = document.createElement('div');
             itemElement.innerHTML = `
-        <p>Nama: ${name}</p>
-        <p>Email: ${email}</p>
-        <p>Alamat Jemput: ${alamatJemputInput}</p>
-        <p>Alamat Antar: ${alamatAntarInput}</p>
-        <p>No HP: ${noHp}</p>
-        <p>Layanan : ${layananInput}</p>
-        <p>Quantity: ${quantityInput} kg </p>
+            <div class="row" style="padding: 20px">
+              <div class="col-sm-2">${name}</div>
+              <div class="col-sm-2">${email}</div>
+              <div class="col-sm-2">${alamatJemputInput}</div>
+              <div class="col-sm-2">${alamatAntarInput}</div>
+              <div class="col-sm-2">${noHp}</div>
+              <div class="col-sm-1">${layananInput}</div>
+              <div class="col-sm-1">${quantityInput}</div>
+            </div>
+            </div>
       `;
             rootElement.appendChild(itemElement);
         });
