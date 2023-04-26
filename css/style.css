@@ -2195,6 +2195,8 @@ pre code {
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
+
+
   }
 }
 
@@ -2219,6 +2221,7 @@ pre code {
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
+
 }
 
 .form-control:disabled,
@@ -2311,11 +2314,13 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 1rem;
+
 }
 
 .form-text {
   display: block;
   margin-top: 0.25rem;
+  border-color: 1px #000;
 }
 
 .form-row {
@@ -10772,7 +10777,7 @@ input[type="password"] {
   margin-top: 10px;
   width: 100%;
   border-radius: 5px;
-  border: none;
+  border-color: 1px #000;
 }
 
 input[type="submit"] {
