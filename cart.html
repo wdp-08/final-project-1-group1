@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>nama lengkap :</span>
+                        <input type="text" id="name" placeholder="Jerome Pollin">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" id="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>alamat jemput:</span>
+                        <input type="text" id="alamatJemput" placeholder="Jln - Gang - No.Rumah">
+                    </div>
+                    <div class="inputBox">
+                        <span>alamat antar :</span>
+                        <input type="text" id="alamatAntar" placeholder="Jln- Gang - No.Rumah">
+                    </div>
+                </div>
+                <div class="col" style="margin-top: 37px; margin-left: 20px;">
+                    <div class="inputBox">
+                        <span>no. hp :</span>
+                        <input type="text" id="noHp" placeholder="081234567890">
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>layanan :</span>
+                            <select id="text" type="text">
+                                <option value="CL">Cuci Lengkap</option>
+                                <option value="CS"> Cuci Setrika</option>
+                                <option value="CK">Cuci Kilat</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span>Quantity :</span>
+                            <input type="number" id="quantity" placeholder="1">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" id="submit" value="proceed to checkout" class="submit-btn">
+            
+        </form>
+
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
