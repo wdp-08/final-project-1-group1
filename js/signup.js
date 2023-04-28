@@ -40,4 +40,6 @@ form.addEventListener('submit', function (event) {
 
     // Arahkan ke halaman login setelah sign up berhasil
     window.location.href = 'login.html';
+
+
 });
