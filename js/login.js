@@ -11,8 +11,10 @@ form.addEventListener('submit', function (event) {
     var storedPassword = localStorage.getItem('password');
 
     if (username === storedUsername && password === storedPassword) {
+        localStorage.setItem('token', 'sudahlogin')
         window.location.href = 'index.html'; // mengarahkan ke halaman home jika login berhasil
     } else {
         status.textContent = 'Invalid username or password';
     }
+
 });
