@@ -1,94 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iClean</title>
+  </head>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/popup.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-right text-lg-right">
-                    <div class="d-inline-flex align-right">
-                        <a class="text-white px-4 mt-2" href=""> <i class="fa fa-shopping-cart"></i>
-                            <a class="btn btn-warning" href="login.html" type="button">Login</a>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
+  <body>
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-secondary"><span class="text-primary">i</span>Clean</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="pricing.html" class="nav-item nav-link active">Pricing</a>
-                        <a href="about.html" class="nav-item nav-link">About Us</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span class="text-primary">i</span>Clean</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
     <!-- Navbar End -->
 
+ 
     <!-- Page Header Start -->
-    <div class="page-header container-fluid bg-secondary pt-2 pt-lg-5 pb-2 mb-5">
-        <div class="container py-5">
-            <div class="row align-items-center py-4">
-                <div class="col-md-6 text-center text-md-left">
-                    <h1 class="mb-4 mb-md-0 text-white">Pricing</h1>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="btn text-white" href="index.html">Home</a>
-                        <i class="fas fa-angle-right text-white"></i>
-                        <a class="btn text-white disabled" href="contact.html">Pricing</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="heading">
+        <h3>Our Pricing</h3>
+        <p> <a href="index.html">home</a> >> <span>pricing</span> </p>
+    </section>
     <!-- Page Header Start -->
 
     <!--Pricing Start-->
-    <div class="container-fluid pt-5 pb-3">
+    <section>
+        <h1 class="title"> <span>Layanan Kami</span> <a href="#">view all >></a> </h1>
         <div class="container">
-            <h1 class="display-4 text-center mb-5">Our Service & Price</h1>
             <div class="products-container">
                 <div class="product" data-name="p-1">
                     <img src="gambar/cucilengkap.png" alt="">
@@ -176,116 +137,110 @@
     </div>
     </div>
     </div>
+    </section>
     <!--Pricing End-->
 
     <!-- Produk Start -->
-    <div class="container-fluid pt-5 pb-3">
-        <div class="container">
-            <h6 class="text-secondary text-uppercase text-center font-weight-medium mb-3">Our Pricing Plan</h6>
-            <h1 class="display-4 text-center mb-5">The Best Produk</h1>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="bg-light text-center mb-2 pt-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="gambar/produk11.jpeg" alt="">
-                        </div>
-                        <h5 class="mb-0">BACCARAT PARFUME</h5>
-                        <p>wanginya tahan lama - pelicin dan pengharum baju anti apek anti jamur</p>
-                        <a href="produk.html" class="btn btn-secondary py-2 px-4">Belanja Sekarang</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="bg-light text-center mb-2 pt-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="gambar/produk5.jpeg" alt="">
-                        </div>
-                        <h5 class="mb-0">SAKURA PARFUME</h5>
-                        <p>wanginya tahan lama - pelicin dan pengharum baju anti apek anti jamur</p>
-                        <a href="produk.html" class="btn btn-secondary py-2 px-4">Belanja Sekarang</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="bg-light text-center mb-2 pt-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="gambar/produk6.jpeg" alt="">
-                        </div>
-                        <h5 class="mb-0">AKASIA PARFUME</h5>
-                        <p>wanginya tahan lama - pelicin dan pengharum baju anti apek anti jamur</p>
-                        <a href="produk.html" class="btn btn-secondary py-2 px-4">Belanja Sekarang</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Produk End -->
+    <section class="packages" id="packages">
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 pt-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-          <div class="col-lg-3 col-md-6 mb-5">
-            <a href="">
-              <h1 class="text-secondary mb-3"><span class="text-white">i</span>Clean</h1>
-            </a>
-            <div class="d-flex justify-content-start mt-4">
-              <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px" href="#"><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px" href="#"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px" href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px" href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+      <h1 class="title"> <span>Produk Terlaris</span> <a href="produk.html">view all >></a> </h1>
+  
+      <div class="box-container">
+          <div class="box">
+              <img src="gambar/produk11.jpeg" alt="">
+              <div class="content">
+                  <h3>BACCARAT PARFUME</h3>
+                  <p>wanginya tahan lama - pelicin dan pengharum baju anti apek anti jamur</p>
+                  <div class="price">Rp17,955</div>
+                  <button class="btn" onclick="addToCard()">Tambahkan ke Keranjang</button>
+              </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="text-white mb-4">Service</h4>
-            <div class="d-flex flex-column justify-content-start">
-              <a class="text-white mb-2" href="pricing.html"><i class="fa fa-angle-right mr-2"></i>Cuci Lengkap</a>
-              <a class="text-white mb-2" href="pricing.html"><i class="fa fa-angle-right mr-2"></i>Setrika</a>
-              <a class="text-white mb-2" href="pricing.html"><i class="fa fa-angle-right mr-2"></i>Cuci Kilat (6 jam)</a>
-            </div>
+  
+          <div class="box">
+              <img src="gambar/produk5.jpeg" alt="">
+              <div class="content">
+                  <h3>SAKURA PARFUME</h3>
+                  <p>wanginya tahan lama - pelicin dan pengharum baju anti apek anti jamur</p>
+                  <div class=" price">Rp17,955</div>
+                  <button class="btn" onclick="addToCard()">Tambahkan ke Keranjang</button>
+              </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="text-white mb-4">Quick Links</h4>
-            <div class="d-flex flex-column justify-content-start">
-              <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
-              <a class="text-white mb-2" href="pricing.html"><i class="fa fa-angle-right mr-2"></i>Pricing</a>
-              <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-              <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-            </div>
+  
+          <div class="box">
+              <img src="gambar/produk5.jpeg" alt="">
+              <div class="content">
+                  <h3>AKASIA PARFUMEE</h3>
+                  <p>wanginya tahan lama - pelicin dan pengharum baju anti apek anti jamur</p>
+                  <div class="price">Rp16,862</div>
+                  <button class="btn" onclick="addToCard()">Tambahkan ke Keranjang</button>
+              </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="text-white mb-4">Get In Touch</h4>
-            <p><i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-            <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-          </div>
-        </div>
       </div>
-      <div class="container-fluid bg-primary text-white py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center text-white">
-          &copy; <a class="text-white font-weight-medium" href="#">Group 1</a>. All Rights Reserved. Designed by
-          <a class="text-white font-weight-medium" href="">Web Developer Program Hacktiv8</a>
-        </p>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js" type="text/javascript"></script>
+  </section>
+    <!-- Produk End -->
+  
+    <!-- Footer Start -->
+    <section>
+        <h1 class="title">  
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest</a>
+            <a href="#"> <i class='bx bx-phone-call'></i></i> youtube</a> 
+        </h1>
+    </section>
+  
+    <section class="footer">
+  
+      <div class="box-container">
+  
+          <div class="box">
+              <h3> Service</h3>
+              <a href="#"> <i class="fas fa-arrow-right"></i> How to shop</a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Payment</a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Free Shipping</a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> FAQ</a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Custom Furniture</a>
+          </div>
+  
+          <div class="box">
+            <h3> Quick Links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="pricing.html"> <i class="fas fa-arrow-right"></i> pricing</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+  
+          <div class="box">
+              <h3> Get In Touch</h3>
+              <a href="#"> <i class="fa fa-phone-alt mr-2"></i> Call +012 345 67890</a>
+              <a href="#"> <i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</a>
+              <a href="#"> <i class="fa fa-envelope mr-2"></i> info@example.com</a>
+          </div>
+          
+          <div class="box">
+              <h3>newsletter</h3>
+              <p>subscribe for latest updates</p>
+              <form action="">
+                  <input type="email" name="" placeholder="enter your email" id="">
+                  <input type="submit" value="subscribe" class="btn">
+              </form>
+          </div>
+  
+      </div>
+  
+  </section>
+  
+  <section class="credit">
+      created by <a href="http://instagram.com/mewahaprilia">WDP-Group1Hacktiv08</a> | all rights reserved!
+  </section>
+      <!-- Footer End -->
+    
+  
+     <!-- Javascript -->
     <script src="js/script.js" type="text/javascript"></script>
-</body>
-
-</html>
+    <script src="js/produk.js" ></script>
+    </body>
+  </html>
+  
