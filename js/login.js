@@ -14,7 +14,7 @@ form.addEventListener('submit', function (event) {
     if (username === storedUsername && password === storedPassword) {
         window.location.href = 'index.html'; // mengarahkan ke halaman home jika login berhasil
     } else {
-        status.textContent = 'Invalid username or password';
+        alert('Invalid username or password');
     }
 
 });

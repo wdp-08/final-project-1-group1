@@ -95,6 +95,10 @@ header .navbar a:hover {
   color: #17b0e3;
 }
 
+header .navbar .active {
+  color: #17b0e3;
+}
+
 header .icons i {
   color: white;
   font-size: 17px;
@@ -124,11 +128,13 @@ header .search-bar-container.active {
 }
 
 header .search-bar-container #search-bar {
-  width: 100%;
+  width: 20%;
   padding: 3px 6px;
   text-transform: none;
+  margin-left: 80%;
   color: black;
   font-size: 15px;
+  border-color: #194376;
   border-radius: 2px;
 }
 
@@ -884,6 +890,7 @@ textarea.input100 {
     padding: 1.5rem;
     margin: 1.5rem 0;
   }
+
 }
 
 @media (max-width: 576px) {

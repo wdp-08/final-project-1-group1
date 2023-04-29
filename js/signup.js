@@ -3,7 +3,6 @@ var usernameInput = document.getElementById('username');
 var emailInput = document.getElementById('email');
 var passwordInput = document.getElementById('password');
 var rePasswordInput = document.getElementById('repassword');
-var status = document.getElementById('status')
 
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // mencegah form untuk mengirimkan data dan melakukan refresh halaman
@@ -13,25 +12,26 @@ form.addEventListener('submit', function (event) {
     var repassword = rePasswordInput.value;
 
     // Validasi form
-    if (username.trim() === '') {
-        status.textContent = 'Please enter a username';
+    if (username === "") {
+        alert("Username tidak boleh kosong!");
         return;
     }
-
-    if (email.trim() === '') {
-        status.textContent = 'Please enter an email';
+    if (email === "") {
+        alert("Email tidak boleh kosong!");
         return;
     }
-
-    if (password.trim() === '') {
-        status.textContent = 'Please enter a password';
+    if (password === "") {
+        alert("Passoword tidak boleh kosong!");
         return;
     }
-
     if (password !== repassword) {
-        status.textContent = 'Passwords do not match';
+        alert("Masukan Password yang sama!");
         return;
+    } else {
+        alert("Berhasil");
     }
+
+
     // Simpan data ke localStorage
     localStorage.setItem('username', username);
     localStorage.setItem('email', email);
@@ -39,9 +39,6 @@ form.addEventListener('submit', function (event) {
 
 
     // Arahkan ke halaman login setelah sign up berhasil
-    alert('berhasil daftar')
     window.location.href = 'login.html';
-
-
 
 });
