@@ -536,7 +536,6 @@ header .search-bar-container label:hover {
   background-color: #060116;
 }
 
-
 .login-form,
 .signup-form {
   margin-left: 50px;
@@ -586,7 +585,7 @@ header .search-bar-container label:hover {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -595,11 +594,8 @@ header .search-bar-container label:hover {
 }
 
 .btn-login:hover {
-  background-color: #3E8E41;
+  background-color: #3e8e41;
 }
-
-
-
 
 /* About */
 .about .row {
@@ -759,11 +755,11 @@ textarea.input100 {
   padding-bottom: 13px;
 }
 
-.input100:focus+.focus-input100::before {
+.input100:focus + .focus-input100::before {
   width: 100%;
 }
 
-.has-val.input100+.focus-input100::before {
+.has-val.input100 + .focus-input100::before {
   width: 100%;
 }
 
