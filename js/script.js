@@ -45,15 +45,3 @@ fotoBtn.forEach((btn) => {
 function myFunction() {
   alert("Terima kasih telah Berbelanja website kami!");
 }
-// Maps Contact
-function initMap() {
-  var location = { lat: -6.2146, lng: 106.8451 };
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: location,
-  });
-  var marker = new google.maps.Marker({
-    position: location,
-    map: map,
-  });
-}

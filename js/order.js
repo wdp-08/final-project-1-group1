@@ -10,22 +10,14 @@ const renderData = () => {
             const { name, email, alamatJemputInput, alamatAntarInput, noHp, layananInput, quantityInput } = item;
             const itemElement = document.createElement('div');
             itemElement.innerHTML = `
-            <div class="table">
-              <table>
-                  <thead>
-                      <tr>
-                              <td class="head">${name}</td>
-                              <td class="head">${email}</td>
-                              <td class="head">${alamatJemputInput}</td>
-                              <td class="head">${alamatAntarInput}</td>
-                              <td class="head">${noHp}</td>
-                              <td class="head">${layananInput}</td>
-                              <td class="head">${quantityInput}</td>
-                      </tr>
-                  </thead>
-              </table>
-              <p id="table">
-              </p>
+            <div class="row" style="padding: 20px">
+            <div class="col-sm-2">${name}</div>
+            <div class="col-sm-2">${alamatJemputInput}</div>
+            <div class="col-sm-2">${alamatAntarInput}</div>
+            <div class="col-sm-3">${noHp}</div>
+            <div class="col-sm-2">${layananInput}</div>
+            <div class="col-sm-1">${quantityInput}</div>
+          </div>
           </div>
       `;
 
