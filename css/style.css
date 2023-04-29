@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: capitalize;
   outline: none;
   border: none;
   text-decoration: none;
@@ -34,15 +33,18 @@ body {
   background: var(--orange);
   color: white;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
 }
+
 section {
   padding: 3rem 9%;
 }
+
 .btn {
   display: inline-block;
   margin-top: 0.1rem;
@@ -53,10 +55,12 @@ section {
   cursor: pointer;
   font-size: 1.7rem;
 }
+
 .btn:hover {
   background: rgba(255, 165, 0, 0.5);
   color: #b7cdb5;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -71,31 +75,37 @@ header {
 }
 
 header .logo {
+  margin-left: 30px;
   font-size: 25px;
   font-weight: bolder;
   color: var(--blue);
-  text-transform: uppercase;
 }
+
 header .logo span {
   color: white;
 }
+
 header .navbar a {
   color: white;
   font-size: 17px;
   margin: 0 0.8rem;
 }
+
 header .navbar a:hover {
   color: #17b0e3;
 }
+
 header .icons i {
   color: white;
   font-size: 17px;
   margin-right: 2rem;
   cursor: pointer;
 }
+
 header .icons i:hover {
   color: #17b0e3;
 }
+
 header .search-bar-container {
   position: absolute;
   top: 100%;
@@ -108,9 +118,11 @@ header .search-bar-container {
   z-index: 1001;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
 header .search-bar-container.active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 header .search-bar-container #search-bar {
   width: 100%;
   padding: 3px 6px;
@@ -119,12 +131,14 @@ header .search-bar-container #search-bar {
   font-size: 15px;
   border-radius: 2px;
 }
+
 header .search-bar-container label {
   color: black;
   cursor: pointer;
   font-size: 15px;
   margin-left: 10px;
 }
+
 header .search-bar-container label:hover {
   color: white;
 }
@@ -141,9 +155,11 @@ header .search-bar-container label:hover {
   align-items: center;
   justify-content: center;
 }
+
 .login-form-container.active {
   top: 0;
 }
+
 .login-form-container form {
   margin: 2rem;
   padding: 1.5rem 2rem;
@@ -151,6 +167,7 @@ header .search-bar-container label:hover {
   background: white;
   width: 50rem;
 }
+
 .login-form-container form h3 {
   font-size: 2.5rem;
   color: #444;
@@ -158,6 +175,7 @@ header .search-bar-container label:hover {
   text-align: center;
   padding: 1rem 0;
 }
+
 .login-form-container form .box {
   width: 100%;
   padding: 1rem;
@@ -167,31 +185,39 @@ header .search-bar-container label:hover {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   text-transform: none;
 }
+
 .login-form-container form .box:focus {
   border-color: var(--orange);
 }
+
 .login-form-container form #remember {
   margin: 2rem 0;
 }
+
 .login-form-container form label {
   font-size: 1.5rem;
 }
+
 .login-form-container form .btn {
   display: block;
   width: 100%;
 }
+
 .login-form-container form p {
   padding: 1.5px 0;
   font-size: 13px;
   color: #666;
 }
+
 .login-form-container form p a {
   color: var(--orange);
 }
+
 .login-form-container form p a:hover {
   color: #333;
   text-decoration: underline;
 }
+
 .login-form-container #form-close {
   position: absolute;
   top: 1rem;
@@ -200,6 +226,7 @@ header .search-bar-container label:hover {
   color: #fff;
   cursor: pointer;
 }
+
 #menu-bar {
   color: white;
   border: 1px solid white;
@@ -221,9 +248,11 @@ header .search-bar-container label:hover {
   background-size: cover;
   background-position-x: center;
 }
+
 .home .content {
   text-align: center;
 }
+
 .home .content h3 {
   font-size: 5rem;
   font-family: monospace;
@@ -231,6 +260,7 @@ header .search-bar-container label:hover {
   text-transform: uppercase;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
+
 .home .content p {
   font-size: 2rem;
   color: #fff;
@@ -274,6 +304,7 @@ header .search-bar-container label:hover {
 .heading p a:hover {
   color: var(--orange);
 }
+
 .banner-container {
   display: -ms-grid;
   display: grid;
@@ -323,6 +354,7 @@ header .search-bar-container label:hover {
 .banner-container .banner .content .btn {
   padding: 0.7rem 2.5rem;
 }
+
 .category .box-container {
   display: -ms-grid;
   display: grid;
@@ -330,6 +362,7 @@ header .search-bar-container label:hover {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1.5rem;
 }
+
 .category .box-container .box {
   padding: 1rem 0.1rem;
   border: 0.3rem solid #525e4c;
@@ -365,20 +398,24 @@ header .search-bar-container label:hover {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
 }
+
 .packages .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
+
 .packages .box-container .box .content {
   padding: 1rem;
   text-align: center;
 }
+
 .packages .box-container .box .content p {
   font-size: 1.5rem;
   color: #333;
 }
+
 .packages .box-container .box .content h3 {
   font-size: 2rem;
   color: #333;
@@ -394,6 +431,7 @@ header .search-bar-container label:hover {
   width: 100%;
   object-fit: cover;
 }
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,10 +468,12 @@ header .search-bar-container label:hover {
   gap: 1.5rem;
   align-items: center;
 }
+
 .contact .row h3 {
   font-size: 3.5rem;
   text-align: left;
 }
+
 .contact .row form {
   flex: 1 1 40rem;
   padding: 2rem 2.5rem;
@@ -471,62 +511,89 @@ header .search-bar-container label:hover {
   resize: none;
 }
 
-/* Login */
-.login .row {
+/*signup*/
+.signup-container,
+.login-container {
   display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 1.5rem;
+  justify-content: center;
   align-items: center;
 }
-.login .row h3 {
-  font-size: 3.5rem;
-  text-align: left;
-}
-.login .row p {
-  font-size: 1.5rem;
-  padding: 1.5px 0;
-  color: #333;
-}
-.login .row form {
-  flex: 1 1 40rem;
-  font-size: 5rem;
-  padding: 2rem 2.5rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  background: #fff;
-  border-radius: 0.5rem;
-}
-.login .row input {
-  font-size: 3rem;
+
+.close {
+  margin-left: 90%;
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
 }
 
-.login .row .image {
-  flex: 1 1 40rem;
+.close:hover {
+  background-color: #060116;
 }
 
-.login .row .image img {
+
+.login-form,
+.signup-form {
+  margin-left: 50px;
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2,
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
   width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.login .row form .box {
-  padding: 1rem;
-  font-size: 1.7rem;
-  color: #333;
-  text-transform: none;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  margin: 0.7rem 0;
+.signup-form p,
+.login-form p {
+  font-size: 12px;
+  color: #000;
+}
+
+.signup-form a,
+.login-form a {
+  font-size: 12px;
+  color: blue;
+}
+
+.btn-login {
+  display: block;
   width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.login .row form .box:focus {
-  border-color: var(--pink);
+.btn-login:hover {
+  background-color: #3E8E41;
 }
 
-.login .row form textarea {
-  height: 15rem;
-  resize: none;
-}
+
+
 
 /* About */
 .about .row {
@@ -686,11 +753,11 @@ textarea.input100 {
   padding-bottom: 13px;
 }
 
-.input100:focus + .focus-input100::before {
+.input100:focus+.focus-input100::before {
   width: 100%;
 }
 
-.has-val.input100 + .focus-input100::before {
+.has-val.input100+.focus-input100::before {
   width: 100%;
 }
 
