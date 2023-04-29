@@ -16,4 +16,10 @@ form.addEventListener("submit", function (event) {
 
   // Arahkan alert
   alert("Pesan Telah Terkirim");
+  console.log(name);
+  console.log(email);
+  console.log(message);
 });
+
+
+

@@ -1,7 +1,8 @@
 var form = document.querySelector('form');
 var usernameInput = document.getElementById('username');
 var passwordInput = document.getElementById('password');
-var status = document.getElementById('status');
+var status = document.getElementById('status')
+
 
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // mencegah form untuk mengirimkan data dan melakukan refresh halaman
@@ -11,7 +12,6 @@ form.addEventListener('submit', function (event) {
     var storedPassword = localStorage.getItem('password');
 
     if (username === storedUsername && password === storedPassword) {
-        localStorage.setItem('token', 'sudahlogin')
         window.location.href = 'index.html'; // mengarahkan ke halaman home jika login berhasil
     } else {
         status.textContent = 'Invalid username or password';
