@@ -886,7 +886,6 @@ textarea.input100 {
     padding: 1.5rem;
     margin: 1.5rem 0;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -968,4 +967,37 @@ textarea.input100 {
 #map {
   width: 100%;
   height: 400px;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+#closePopup {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#closePopup:hover {
+  background-color: #555;
 }
