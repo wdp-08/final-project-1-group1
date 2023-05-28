@@ -246,8 +246,8 @@ header .search-bar-container label:hover {
 .banner {
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-flow: column;
   position: relative;
   z-index: 0;
@@ -262,6 +262,7 @@ header .search-bar-container label:hover {
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-align: center; /* Menambahkan property text-align: center; */
 }
 
 .banner p {
