@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .row {
@@ -16,7 +16,6 @@
   width: 100%;
   flex-wrap: wrap;
 }
-
 
 .container {
   display: flex;
@@ -31,7 +30,7 @@
   padding: 20px;
   width: 700px;
   background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .container form .row {
@@ -101,7 +100,6 @@
   background: #535e84;
 }
 
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -111,11 +109,11 @@ th,
 td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
 }
 
 tr:hover {
-  background-color: #D6EEEE;
+  background-color: #d6eeee;
 }
 
 .table {
