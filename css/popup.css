@@ -166,13 +166,23 @@ html{
     .products-preview .preview img{
        height: 25rem;
     }
+
+    .container .products-container{
+        display: block;
+        gap:2rem;
+    }
  
 }
  
 @media (max-width:450px){
  
     html{
-       font-size: 100%;
+       font-size: 50%;
+    }
+
+    .container .products-container{
+        display: block;
+        gap:2rem;
     }
  
 }
